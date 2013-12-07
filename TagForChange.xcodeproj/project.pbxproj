@@ -45,6 +45,9 @@
 		9C5A772118536F84005573AA /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A772018536F84005573AA /* Story.m */; };
 		9C5A772418536F90005573AA /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A772318536F90005573AA /* Tag.m */; };
 		9C5A772718537446005573AA /* UsersChallenges.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A772618537446005573AA /* UsersChallenges.m */; };
+		9CFFE93A1853845100E4A90A /* StoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE9391853845100E4A90A /* StoriesTableViewController.m */; };
+		9CFFE93D1853846D00E4A90A /* TagsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE93C1853846D00E4A90A /* TagsTableViewController.m */; };
+		9CFFE941185384CB00E4A90A /* StoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE940185384CB00E4A90A /* StoryTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +117,12 @@
 		9C5A772318536F90005573AA /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
 		9C5A772518537446005573AA /* UsersChallenges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersChallenges.h; sourceTree = "<group>"; };
 		9C5A772618537446005573AA /* UsersChallenges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersChallenges.m; sourceTree = "<group>"; };
+		9CFFE9381853845100E4A90A /* StoriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoriesTableViewController.h; sourceTree = "<group>"; };
+		9CFFE9391853845100E4A90A /* StoriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoriesTableViewController.m; sourceTree = "<group>"; };
+		9CFFE93B1853846D00E4A90A /* TagsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagsTableViewController.h; sourceTree = "<group>"; };
+		9CFFE93C1853846D00E4A90A /* TagsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsTableViewController.m; sourceTree = "<group>"; };
+		9CFFE93F185384CB00E4A90A /* StoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryTableViewCell.h; sourceTree = "<group>"; };
+		9CFFE940185384CB00E4A90A /* StoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +212,7 @@
 				9C5A76B81853442D005573AA /* Main.storyboard */,
 				9C5A76F218534A44005573AA /* ViewControllers */,
 				9C5A770F185361A2005573AA /* Models */,
+				9CFFE93E185384B600E4A90A /* Views */,
 				9C5A76BE1853442D005573AA /* Images.xcassets */,
 				9C5A76FA1853509F005573AA /* Vendors */,
 				9C5A76AD1853442D005573AA /* Supporting Files */,
@@ -242,6 +252,10 @@
 		9C5A76F218534A44005573AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9CFFE9381853845100E4A90A /* StoriesTableViewController.h */,
+				9CFFE9391853845100E4A90A /* StoriesTableViewController.m */,
+				9CFFE93B1853846D00E4A90A /* TagsTableViewController.h */,
+				9CFFE93C1853846D00E4A90A /* TagsTableViewController.m */,
 				9C5A76F318534ACA005573AA /* LoginViewController.h */,
 				9C5A76F418534ACA005573AA /* LoginViewController.m */,
 			);
@@ -300,6 +314,15 @@
 				9C5A772618537446005573AA /* UsersChallenges.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		9CFFE93E185384B600E4A90A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CFFE93F185384CB00E4A90A /* StoryTableViewCell.h */,
+				9CFFE940185384CB00E4A90A /* StoryTableViewCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,14 +423,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C5A770E185350FF005573AA /* TWSignedRequest.m in Sources */,
+				9CFFE941185384CB00E4A90A /* StoryTableViewCell.m in Sources */,
 				9C5A76FD185350B3005573AA /* PFTwitterUtils+NativeTwitter.m in Sources */,
 				9C5A7718185362A0005573AA /* TFCUser.m in Sources */,
 				9C5A770D185350FF005573AA /* TWAPIManager.m in Sources */,
 				9C5A772118536F84005573AA /* Story.m in Sources */,
 				9C5A772718537446005573AA /* UsersChallenges.m in Sources */,
 				9C5A7706185350EB005573AA /* OAuth+Additions.m in Sources */,
+				9CFFE93A1853845100E4A90A /* StoriesTableViewController.m in Sources */,
 				9C5A76B71853442D005573AA /* AppDelegate.m in Sources */,
 				9C5A7705185350EB005573AA /* NSData+Base64.m in Sources */,
+				9CFFE93D1853846D00E4A90A /* TagsTableViewController.m in Sources */,
 				9C5A7707185350EB005573AA /* OAuthCore.m in Sources */,
 				9C5A771E18536F76005573AA /* Sponsor.m in Sources */,
 				9C5A772418536F90005573AA /* Tag.m in Sources */,
@@ -630,6 +656,7 @@
 				9C5A76D71853442D005573AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C5A76D81853442D005573AA /* Build configuration list for PBXNativeTarget "TagForChangeTests" */ = {
 			isa = XCConfigurationList;
@@ -638,6 +665,7 @@
 				9C5A76DA1853442D005573AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

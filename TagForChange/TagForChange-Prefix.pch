@@ -16,4 +16,9 @@
     #import "Constants.h"
     #import <Parse/Parse.h>
     #import "TFCUser.h"
+    #import "Challenge.h"
+    #import "Sponsor.h"
+    #import "Story.h"
+    #import "Tag.h"
+    #import "UsersChallenges.h"
 #endif

@@ -7,11 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "Challenge.h"
-#import "Sponsor.h"
-#import "Story.h"
-#import "Tag.h"
-#import "UsersChallenges.h"
 
 @implementation AppDelegate
 
