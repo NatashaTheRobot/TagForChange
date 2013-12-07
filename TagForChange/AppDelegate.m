@@ -15,7 +15,7 @@
     [Parse setApplicationId:PARSE_APPLICATION_ID
                   clientKey:PARSE_CLIENT_KEY];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
+    [TFCUser registerSubclass];
     
     return YES;
 }

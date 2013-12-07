@@ -12,6 +12,7 @@
 @interface LoginViewController () <UIActionSheetDelegate>
 
 @property (strong, nonatomic) NSArray *twitterAccounts;
+@property (assign, nonatomic) id selectedTwitterAccount;
 
 @end
 
@@ -29,11 +30,26 @@
     
     [PFTwitterUtils initializeWithConsumerKey:TWITTER_CONSUMER_KEY consumerSecret:TWITTER_CONSUMER_SECRET];
     
-    [PFTwitterUtils setNativeLogInSuccessBlock:^(PFUser *user, NSString *userTwitterId, NSError *error) {
-        NSLog(@"success!!!");
+    [PFTwitterUtils setNativeLogInSuccessBlock:^(PFUser *parseUser, NSString *userTwitterId, NSError *error) {
+        NSString * requestString = [NSString stringWithFormat:@"https://api.twitter.com/1.1/users/show.json?screen_name=%@", [weakSelf.selectedTwitterAccount username]];
+        
+        NSURL *verify = [NSURL URLWithString:requestString];
+        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:verify];
+        [[PFTwitterUtils twitter] signRequest:request];
+        
+        [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+            NSError *error;
+            NSDictionary* result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+            if (!error) {
+                TFCUser *user = (TFCUser *)parseUser;
+                user.username = result[@"screen_name"];
+                user.name= result[@"name"];
+                user.image_url = [result[@"profile_image_url"] stringByReplacingOccurrencesOfString:@"_normal" withString:@"_bigger"];
+                [user saveEventually];
+            }
+        }];
+        
     }];
-    
-    
     
     [PFTwitterUtils getTwitterAccounts:^(BOOL accountsWereFound, NSArray *twitterAccounts) {
         if (accountsWereFound) {
@@ -41,6 +57,7 @@
                 weakSelf.twitterAccounts = twitterAccounts;
                 [weakSelf displayTwitterAccounts:twitterAccounts];
             } else {
+                weakSelf.selectedTwitterAccount = twitterAccounts[0];
                 [PFTwitterUtils logInWithAccount:twitterAccounts[0]];
             }
         }
@@ -71,6 +88,7 @@
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex != actionSheet.cancelButtonIndex) {
+        self.selectedTwitterAccount = self.twitterAccounts[buttonIndex];
         [PFTwitterUtils logInWithAccount:self.twitterAccounts[buttonIndex]];
     }
 }

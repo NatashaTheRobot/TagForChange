@@ -39,6 +39,7 @@
 		9C5A7707185350EB005573AA /* OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A7704185350EB005573AA /* OAuthCore.m */; };
 		9C5A770D185350FF005573AA /* TWAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A770A185350FF005573AA /* TWAPIManager.m */; };
 		9C5A770E185350FF005573AA /* TWSignedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A770C185350FF005573AA /* TWSignedRequest.m */; };
+		9C5A7718185362A0005573AA /* TFCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A7717185362A0005573AA /* TFCUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,8 @@
 		9C5A770A185350FF005573AA /* TWAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAPIManager.m; sourceTree = "<group>"; };
 		9C5A770B185350FF005573AA /* TWSignedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSignedRequest.h; sourceTree = "<group>"; };
 		9C5A770C185350FF005573AA /* TWSignedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSignedRequest.m; sourceTree = "<group>"; };
+		9C5A7716185362A0005573AA /* TFCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFCUser.h; path = ../TFCUser.h; sourceTree = "<group>"; };
+		9C5A7717185362A0005573AA /* TFCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFCUser.m; path = ../TFCUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +187,7 @@
 				9C5A76DB18534517005573AA /* Constants.h */,
 				9C5A76B81853442D005573AA /* Main.storyboard */,
 				9C5A76F218534A44005573AA /* ViewControllers */,
+				9C5A770F185361A2005573AA /* Models */,
 				9C5A76BE1853442D005573AA /* Images.xcassets */,
 				9C5A76FA1853509F005573AA /* Vendors */,
 				9C5A76AD1853442D005573AA /* Supporting Files */,
@@ -262,6 +266,15 @@
 				9C5A770C185350FF005573AA /* TWSignedRequest.m */,
 			);
 			path = TwitterReverseAuth;
+			sourceTree = "<group>";
+		};
+		9C5A770F185361A2005573AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C5A7716185362A0005573AA /* TFCUser.h */,
+				9C5A7717185362A0005573AA /* TFCUser.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +376,7 @@
 			files = (
 				9C5A770E185350FF005573AA /* TWSignedRequest.m in Sources */,
 				9C5A76FD185350B3005573AA /* PFTwitterUtils+NativeTwitter.m in Sources */,
+				9C5A7718185362A0005573AA /* TFCUser.m in Sources */,
 				9C5A770D185350FF005573AA /* TWAPIManager.m in Sources */,
 				9C5A7706185350EB005573AA /* OAuth+Additions.m in Sources */,
 				9C5A76B71853442D005573AA /* AppDelegate.m in Sources */,
