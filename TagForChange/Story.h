@@ -9,7 +9,11 @@
 #import "Challenge.h"
 
 typedef NS_ENUM(NSInteger, StoryType) {
-    StoryTypeChallegeCompleted
+    StoryTypeChallengeCreated,
+    StoryTypeChallengeJoined,
+    StoryTypeChallengeAccepted,
+    StoryTypeChallengeCompleted,
+    StoryTypeChallengeTagged
 };
 
 @interface Story : PFObject <PFSubclassing>
@@ -21,5 +25,6 @@ typedef NS_ENUM(NSInteger, StoryType) {
 @property (strong, nonatomic) NSNumber *likes;
 
 + (NSString *)parseClassName;
+- (NSString *)text;
 
 @end

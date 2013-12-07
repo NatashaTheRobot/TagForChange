@@ -63,6 +63,7 @@
 		9CFFE97318539D3400E4A90A /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE96318539D3400E4A90A /* UIImage+MultiFormat.m */; };
 		9CFFE97418539D3400E4A90A /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE96518539D3400E4A90A /* UIImage+WebP.m */; };
 		9CFFE97518539D3400E4A90A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE96718539D3400E4A90A /* UIImageView+WebCache.m */; };
+		9CFFE9781853AC8100E4A90A /* ColorfulNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE9771853AC8100E4A90A /* ColorfulNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +170,8 @@
 		9CFFE96518539D3400E4A90A /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
 		9CFFE96618539D3400E4A90A /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		9CFFE96718539D3400E4A90A /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		9CFFE9761853AC8100E4A90A /* ColorfulNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorfulNavigationController.h; sourceTree = "<group>"; };
+		9CFFE9771853AC8100E4A90A /* ColorfulNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorfulNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +308,8 @@
 				9CFFE93C1853846D00E4A90A /* TagsTableViewController.m */,
 				9C5A76F318534ACA005573AA /* LoginViewController.h */,
 				9C5A76F418534ACA005573AA /* LoginViewController.m */,
+				9CFFE9761853AC8100E4A90A /* ColorfulNavigationController.h */,
+				9CFFE9771853AC8100E4A90A /* ColorfulNavigationController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -540,6 +545,7 @@
 				9CFFE9491853982700E4A90A /* BeaconManager.m in Sources */,
 				9CFFE96818539D3400E4A90A /* MKAnnotationView+WebCache.m in Sources */,
 				9C5A7707185350EB005573AA /* OAuthCore.m in Sources */,
+				9CFFE9781853AC8100E4A90A /* ColorfulNavigationController.m in Sources */,
 				9C5A771E18536F76005573AA /* Sponsor.m in Sources */,
 				9CFFE97318539D3400E4A90A /* UIImage+MultiFormat.m in Sources */,
 				9C5A772418536F90005573AA /* Tag.m in Sources */,

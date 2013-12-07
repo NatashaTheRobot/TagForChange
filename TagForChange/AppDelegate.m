@@ -23,6 +23,9 @@
     [Tag registerSubclass];
     [UsersChallenges registerSubclass];
     
+    UIColor *tintcolor = [UIColor colorWithRed:131/255.0 green:225/255.0 blue:151/255.0 alpha:1];
+    self.window.tintColor = tintcolor;
+    
     if ([TFCUser currentUser]) {
         [BeaconManager sharedManager];
     }

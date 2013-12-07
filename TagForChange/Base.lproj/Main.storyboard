@@ -46,8 +46,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="Xw3-oO-aaQ" kind="relationship" relationship="viewControllers" id="eSh-22-Gqt"/>
-                        <segue destination="Yfy-GV-bis" kind="relationship" relationship="viewControllers" id="QpY-Tt-YQ7"/>
                         <segue destination="w81-Hy-VvL" kind="relationship" relationship="viewControllers" id="C5x-ln-gVu"/>
+                        <segue destination="Yfy-GV-bis" kind="relationship" relationship="viewControllers" id="QpY-Tt-YQ7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ok-lK-e3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -97,11 +97,11 @@
             </objects>
             <point key="canvasLocation" x="979" y="-253"/>
         </scene>
-        <!--Navigation Controller - Stories-->
+        <!--Colorful Navigation Controller - Stories-->
         <scene sceneID="ngO-H3-lH7">
             <objects>
-                <navigationController definesPresentationContext="YES" id="Xw3-oO-aaQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Stories" id="h6i-sA-JUo"/>
+                <navigationController definesPresentationContext="YES" id="Xw3-oO-aaQ" customClass="ColorfulNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Stories" image="feed" id="h6i-sA-JUo"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="epf-1G-Dvt">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -113,7 +113,7 @@
             </objects>
             <point key="canvasLocation" x="468" y="-253"/>
         </scene>
-        <!--View Controller - Profile-->
+        <!--View Controller - Me-->
         <scene sceneID="Q7j-e7-8Jv">
             <objects>
                 <viewController id="w81-Hy-VvL" sceneMemberID="viewController">
@@ -126,7 +126,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="dWC-mr-7Yv"/>
+                    <tabBarItem key="tabBarItem" title="Me" image="me" id="dWC-mr-7Yv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRx-lU-3xn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,7 +155,7 @@
                             <outlet property="delegate" destination="Yfy-GV-bis" id="Fwb-sL-kJz"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Tags" id="eOW-qG-mYz"/>
+                    <tabBarItem key="tabBarItem" title="Tags" image="tag" id="eOW-qG-mYz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJh-Jb-KXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,6 +164,9 @@
     </scenes>
     <resources>
         <image name="b2_logo_80" width="80" height="80"/>
+        <image name="feed" width="25" height="25"/>
+        <image name="me" width="25" height="25"/>
+        <image name="tag" width="25" height="25"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -32,6 +32,13 @@
 {
     [super viewDidLoad];
     
+    [self.tableView setContentInset:UIEdgeInsetsMake(1,0,0,0)];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"butterfly_icon"]];
+    
+    imageView.frame = CGRectMake(160 - imageView.frame.size.width / 4, 20, imageView.frame.size.width / 2, imageView.frame.size.height / 2);
+    [self.navigationController.view addSubview:imageView];
+    
 //    Challenge *challenge = [Challenge object];
 //    challenge.title = @"Chime for Change";
 //    challenge.description = @"Teach something";
