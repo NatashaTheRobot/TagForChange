@@ -48,6 +48,7 @@
 		9CFFE93A1853845100E4A90A /* StoriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE9391853845100E4A90A /* StoriesTableViewController.m */; };
 		9CFFE93D1853846D00E4A90A /* TagsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE93C1853846D00E4A90A /* TagsTableViewController.m */; };
 		9CFFE941185384CB00E4A90A /* StoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE940185384CB00E4A90A /* StoryTableViewCell.m */; };
+		9CFFE9491853982700E4A90A /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE9481853982700E4A90A /* BeaconManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,8 @@
 		9CFFE93C1853846D00E4A90A /* TagsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagsTableViewController.m; sourceTree = "<group>"; };
 		9CFFE93F185384CB00E4A90A /* StoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryTableViewCell.h; sourceTree = "<group>"; };
 		9CFFE940185384CB00E4A90A /* StoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryTableViewCell.m; sourceTree = "<group>"; };
+		9CFFE9471853982700E4A90A /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
+		9CFFE9481853982700E4A90A /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +216,7 @@
 				9C5A76F218534A44005573AA /* ViewControllers */,
 				9C5A770F185361A2005573AA /* Models */,
 				9CFFE93E185384B600E4A90A /* Views */,
+				9CFFE9461853978000E4A90A /* Managers */,
 				9C5A76BE1853442D005573AA /* Images.xcassets */,
 				9C5A76FA1853509F005573AA /* Vendors */,
 				9C5A76AD1853442D005573AA /* Supporting Files */,
@@ -325,6 +329,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		9CFFE9461853978000E4A90A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9CFFE9471853982700E4A90A /* BeaconManager.h */,
+				9CFFE9481853982700E4A90A /* BeaconManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -434,6 +447,7 @@
 				9C5A76B71853442D005573AA /* AppDelegate.m in Sources */,
 				9C5A7705185350EB005573AA /* NSData+Base64.m in Sources */,
 				9CFFE93D1853846D00E4A90A /* TagsTableViewController.m in Sources */,
+				9CFFE9491853982700E4A90A /* BeaconManager.m in Sources */,
 				9C5A7707185350EB005573AA /* OAuthCore.m in Sources */,
 				9C5A771E18536F76005573AA /* Sponsor.m in Sources */,
 				9C5A772418536F90005573AA /* Tag.m in Sources */,

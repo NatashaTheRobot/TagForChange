@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BeaconManager.h"
 
 @implementation AppDelegate
 
@@ -21,6 +22,10 @@
     [Story registerSubclass];
     [Tag registerSubclass];
     [UsersChallenges registerSubclass];
+    
+    if ([TFCUser currentUser]) {
+        [BeaconManager sharedManager];
+    }
     
     return YES;
 }

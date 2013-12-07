@@ -10,5 +10,6 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *image_url;
+@property (strong, nonatomic) NSString *uuidString;
 
 @end

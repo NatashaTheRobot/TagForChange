@@ -45,6 +45,7 @@
                 user.username = result[@"screen_name"];
                 user.name= result[@"name"];
                 user.image_url = [result[@"profile_image_url"] stringByReplacingOccurrencesOfString:@"_normal" withString:@"_bigger"];
+                user.uuidString = [[NSUUID UUID] UUIDString];
                 [user saveEventually];
             }
         }];
