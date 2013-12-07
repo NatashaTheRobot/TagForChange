@@ -30,6 +30,15 @@
 		9C5A76ED1853460A005573AA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5A76EC1853460A005573AA /* Security.framework */; };
 		9C5A76EF18534611005573AA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5A76EE18534611005573AA /* StoreKit.framework */; };
 		9C5A76F11853461A005573AA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5A76F01853461A005573AA /* SystemConfiguration.framework */; };
+		9C5A76F518534ACA005573AA /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A76F418534ACA005573AA /* LoginViewController.m */; };
+		9C5A76F718535035005573AA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5A76F618535035005573AA /* Accounts.framework */; };
+		9C5A76F91853505A005573AA /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C5A76F81853505A005573AA /* Twitter.framework */; };
+		9C5A76FD185350B3005573AA /* PFTwitterUtils+NativeTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A76FC185350B3005573AA /* PFTwitterUtils+NativeTwitter.m */; };
+		9C5A7705185350EB005573AA /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A7700185350EB005573AA /* NSData+Base64.m */; };
+		9C5A7706185350EB005573AA /* OAuth+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A7702185350EB005573AA /* OAuth+Additions.m */; };
+		9C5A7707185350EB005573AA /* OAuthCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A7704185350EB005573AA /* OAuthCore.m */; };
+		9C5A770D185350FF005573AA /* TWAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A770A185350FF005573AA /* TWAPIManager.m */; };
+		9C5A770E185350FF005573AA /* TWSignedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A770C185350FF005573AA /* TWSignedRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +80,22 @@
 		9C5A76EC1853460A005573AA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9C5A76EE18534611005573AA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		9C5A76F01853461A005573AA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9C5A76F318534ACA005573AA /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		9C5A76F418534ACA005573AA /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		9C5A76F618535035005573AA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		9C5A76F81853505A005573AA /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		9C5A76FB185350B3005573AA /* PFTwitterUtils+NativeTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFTwitterUtils+NativeTwitter.h"; sourceTree = "<group>"; };
+		9C5A76FC185350B3005573AA /* PFTwitterUtils+NativeTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFTwitterUtils+NativeTwitter.m"; sourceTree = "<group>"; };
+		9C5A76FF185350EB005573AA /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		9C5A7700185350EB005573AA /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		9C5A7701185350EB005573AA /* OAuth+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuth+Additions.h"; sourceTree = "<group>"; };
+		9C5A7702185350EB005573AA /* OAuth+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OAuth+Additions.m"; sourceTree = "<group>"; };
+		9C5A7703185350EB005573AA /* OAuthCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthCore.h; sourceTree = "<group>"; };
+		9C5A7704185350EB005573AA /* OAuthCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthCore.m; sourceTree = "<group>"; };
+		9C5A7709185350FF005573AA /* TWAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWAPIManager.h; sourceTree = "<group>"; };
+		9C5A770A185350FF005573AA /* TWAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWAPIManager.m; sourceTree = "<group>"; };
+		9C5A770B185350FF005573AA /* TWSignedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSignedRequest.h; sourceTree = "<group>"; };
+		9C5A770C185350FF005573AA /* TWSignedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSignedRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5A76F91853505A005573AA /* Twitter.framework in Frameworks */,
+				9C5A76F718535035005573AA /* Accounts.framework in Frameworks */,
 				9C5A76F11853461A005573AA /* SystemConfiguration.framework in Frameworks */,
 				9C5A76EF18534611005573AA /* StoreKit.framework in Frameworks */,
 				9C5A76ED1853460A005573AA /* Security.framework in Frameworks */,
@@ -129,6 +156,8 @@
 		9C5A76A51853442D005573AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C5A76F81853505A005573AA /* Twitter.framework */,
+				9C5A76F618535035005573AA /* Accounts.framework */,
 				9C5A76F01853461A005573AA /* SystemConfiguration.framework */,
 				9C5A76EE18534611005573AA /* StoreKit.framework */,
 				9C5A76EC1853460A005573AA /* Security.framework */,
@@ -156,6 +185,7 @@
 				9C5A76B81853442D005573AA /* Main.storyboard */,
 				9C5A76F218534A44005573AA /* ViewControllers */,
 				9C5A76BE1853442D005573AA /* Images.xcassets */,
+				9C5A76FA1853509F005573AA /* Vendors */,
 				9C5A76AD1853442D005573AA /* Supporting Files */,
 			);
 			path = TagForChange;
@@ -193,8 +223,45 @@
 		9C5A76F218534A44005573AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9C5A76F318534ACA005573AA /* LoginViewController.h */,
+				9C5A76F418534ACA005573AA /* LoginViewController.m */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9C5A76FA1853509F005573AA /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				9C5A7708185350FF005573AA /* TwitterReverseAuth */,
+				9C5A76FE185350EB005573AA /* ABOAuthCore */,
+				9C5A76FB185350B3005573AA /* PFTwitterUtils+NativeTwitter.h */,
+				9C5A76FC185350B3005573AA /* PFTwitterUtils+NativeTwitter.m */,
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		9C5A76FE185350EB005573AA /* ABOAuthCore */ = {
+			isa = PBXGroup;
+			children = (
+				9C5A76FF185350EB005573AA /* NSData+Base64.h */,
+				9C5A7700185350EB005573AA /* NSData+Base64.m */,
+				9C5A7701185350EB005573AA /* OAuth+Additions.h */,
+				9C5A7702185350EB005573AA /* OAuth+Additions.m */,
+				9C5A7703185350EB005573AA /* OAuthCore.h */,
+				9C5A7704185350EB005573AA /* OAuthCore.m */,
+			);
+			path = ABOAuthCore;
+			sourceTree = "<group>";
+		};
+		9C5A7708185350FF005573AA /* TwitterReverseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				9C5A7709185350FF005573AA /* TWAPIManager.h */,
+				9C5A770A185350FF005573AA /* TWAPIManager.m */,
+				9C5A770B185350FF005573AA /* TWSignedRequest.h */,
+				9C5A770C185350FF005573AA /* TWSignedRequest.m */,
+			);
+			path = TwitterReverseAuth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,8 +361,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C5A770E185350FF005573AA /* TWSignedRequest.m in Sources */,
+				9C5A76FD185350B3005573AA /* PFTwitterUtils+NativeTwitter.m in Sources */,
+				9C5A770D185350FF005573AA /* TWAPIManager.m in Sources */,
+				9C5A7706185350EB005573AA /* OAuth+Additions.m in Sources */,
 				9C5A76B71853442D005573AA /* AppDelegate.m in Sources */,
+				9C5A7705185350EB005573AA /* NSData+Base64.m in Sources */,
+				9C5A7707185350EB005573AA /* OAuthCore.m in Sources */,
 				9C5A76B31853442D005573AA /* main.m in Sources */,
+				9C5A76F518534ACA005573AA /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
