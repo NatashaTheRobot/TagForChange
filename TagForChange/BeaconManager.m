@@ -41,8 +41,8 @@ static BeaconManager *beaconManager;
 {
     self = [super init];
     
-    [self initBeacon];
-    [self trasmitBeacon];
+//    [self initBeacon];
+//    [self trasmitBeacon];
     // start monitoriing for beacons!
     
     return self;

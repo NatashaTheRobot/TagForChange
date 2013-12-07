@@ -10,4 +10,6 @@
 
 @interface StoryTableViewCell : UITableViewCell
 
+@property (strong, nonatomic) Story *story;
+
 @end

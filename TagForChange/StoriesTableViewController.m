@@ -32,9 +32,6 @@
 {
     [super viewDidLoad];
     
-//    [Challenge registerSubclass];
-//    [Story registerSubclass];
-//    
 //    Challenge *challenge = [Challenge object];
 //    challenge.title = @"Chime for Change";
 //    challenge.description = @"Teach something";
@@ -74,7 +71,7 @@
 {
     StoryTableViewCell *storyCell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass(StoryTableViewCell.class)
                                                                     forIndexPath:indexPath];
-    storyCell.textLabel.text = @"hello";
+    storyCell.story = story;
     
     return storyCell;
 }
