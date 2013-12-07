@@ -71,15 +71,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StoryTableViewCell" id="3qL-lZ-Mni" customClass="StoryTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StoryTableViewCell" id="3qL-lZ-Mni" customClass="StoryTableViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="126"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3qL-lZ-Mni" id="eZC-OU-SRP">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="egg" translatesAutoresizingMaskIntoConstraints="NO" id="Vfe-H3-nfr">
-                                            <rect key="frame" x="20" y="20" width="44" height="44"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="egg" translatesAutoresizingMaskIntoConstraints="NO" id="Vfe-H3-nfr">
+                                            <rect key="frame" x="20" y="20" width="11" height="44"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="44" id="n9a-Lj-Stt"/>
@@ -123,6 +123,7 @@
                                     <outlet property="numberOfParticipantsLable" destination="bAO-zB-vzp" id="Hf7-Ti-ZFP"/>
                                     <outlet property="profileImage" destination="Vfe-H3-nfr" id="gwI-cF-mJw"/>
                                     <outlet property="storyText" destination="7Pf-LP-ZZb" id="daV-hr-LfC"/>
+                                    <segue destination="06z-GW-SRm" kind="push" id="Ksa-qF-iwz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -141,6 +142,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IuX-5m-42j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="979" y="-253"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QZz-JT-Bm4">
+            <objects>
+                <viewController id="06z-GW-SRm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hyQ-96-Tnn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ytf-k9-dJ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EY0-tJ-nsg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="challenge_detail" translatesAutoresizingMaskIntoConstraints="NO" id="Jez-YO-dDy">
+                                <rect key="frame" x="0.0" y="50" width="320" height="518"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vd2-ix-Kst"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dE7-rx-KPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1366" y="-253"/>
         </scene>
         <!--Colorful Navigation Controller - Stories-->
         <scene sceneID="ngO-H3-lH7">
@@ -169,10 +195,20 @@
                     <view key="view" contentMode="scaleToFill" id="7DY-iZ-uV9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Me_1" translatesAutoresizingMaskIntoConstraints="NO" id="6yn-Ok-uGB">
+                                <rect key="frame" x="7" y="59" width="307" height="509"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Me" image="me" id="dWC-mr-7Yv"/>
-                    <navigationItem key="navigationItem" title="My Account" id="jBm-cM-iae"/>
+                    <navigationItem key="navigationItem" title="My Account" id="jBm-cM-iae">
+                        <barButtonItem key="rightBarButtonItem" image="add_icon" id="6VT-eY-4qJ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cRx-lU-3xn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -288,7 +324,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Me_1" width="307" height="509"/>
         <image name="Tutorial_Screen" width="305" height="396"/>
+        <image name="add_icon" width="38" height="31"/>
+        <image name="challenge_detail" width="320" height="518"/>
         <image name="egg" width="33" height="36"/>
         <image name="feed" width="25" height="25"/>
         <image name="feed_action_bar" width="320" height="30"/>

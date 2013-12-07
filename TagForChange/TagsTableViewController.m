@@ -64,7 +64,9 @@
     if ([self.objects count] == 0) {
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     }
-    
+    [query includeKey:@"challenge"];
+    [query includeKey:@"primaryUser"];
+    [query includeKey:@"secondaryUser"];
     [query orderByAscending:@"title"];
     
     return query;

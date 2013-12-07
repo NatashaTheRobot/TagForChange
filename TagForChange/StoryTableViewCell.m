@@ -29,9 +29,9 @@
 - (void)setStory:(Story *)story
 {
     _story = story;
-    [story.primaryUser fetchIfNeeded];
-    [story.challenge fetchIfNeeded];
-    [story.secondaryUser fetchIfNeeded];
+//    [story.primaryUser fetchIfNeeded];
+//    [story.challenge fetchIfNeeded];
+//    [story.secondaryUser fetchIfNeeded];
     StoryTableViewCell *weakSelf = self;
     [self.profileImage setImageWithURL:[NSURL URLWithString:story.primaryUser.image_url] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
         if (error) {

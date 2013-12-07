@@ -39,22 +39,7 @@
     imageView.frame = CGRectMake(160 - imageView.frame.size.width / 2, 20, imageView.frame.size.width, imageView.frame.size.height);
     [self.navigationController.view addSubview:imageView];
     
-//    PFQuery *query = [TFCUser query];
-//    NSArray *users = [query findObjects];
-//    
-//    Challenge *challenge = [Challenge object];
-//    challenge.title = @"Check in with your people";
-//    challenge.description = @"Ask someone nearby “how are you?” mean it and listen.";
-//    challenge.initiator = users[arc4random() % users.count];
-//    [challenge saveInBackground];
-//    
-//    Story *story = [Story object];
-//    story.primaryUser = users[arc4random() % users.count];
-//    story.secondaryUser = users[arc4random() % users.count];
-//    story.storyType = @(arc4random() % 4);
-//    story.challenge = challenge;
-//    [story saveInBackground];
-    
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
 #pragma mark - Parse
@@ -68,7 +53,9 @@
     if ([self.objects count] == 0) {
         query.cachePolicy = kPFCachePolicyCacheThenNetwork;
     }
-    
+    [query includeKey:@"challenge"];
+    [query includeKey:@"primaryUser"];
+    [query includeKey:@"secondaryUser"];
     [query orderByAscending:@"create_at"];
     
     return query;
