@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BeaconManager.h"
 
 @implementation AppDelegate
 
@@ -21,6 +22,8 @@
     [Story registerSubclass];
     [Tag registerSubclass];
     [UsersChallenges registerSubclass];
+    
+    [BeaconManager sharedManager];
     
     return YES;
 }

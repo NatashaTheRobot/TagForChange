@@ -12,3 +12,5 @@ static NSString * const PARSE_CLIENT_KEY = @"JwQcNPQIM16QeeQZhshx3idTLmsrMHJHhh2
 
 static NSString * const TWITTER_CONSUMER_KEY = @"yIQmUK16TXHyePTStRyzQ";
 static NSString * const TWITTER_CONSUMER_SECRET = @"GXprkLcwtv6IbAdOfRQHDVEYXaT8JU4Tjz6jmOMg";
+
+static NSString * const TAG_FOR_CHANGE_BEACON_IDENTIFIER = @"com.tag_for_change.beacon"
