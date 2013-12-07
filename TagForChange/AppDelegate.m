@@ -30,6 +30,11 @@
         [BeaconManager sharedManager];
     }
     
+    NSDictionary *textAttributes = @{ NSForegroundColorAttributeName : [UIColor whiteColor]};
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:textAttributes];
+
+    
     return YES;
 }
 							

@@ -50,6 +50,8 @@
             }
         }];
         
+        [self performSegueWithIdentifier:@"tutorialToFeed" sender:self];
+        
     }];
     
     [PFTwitterUtils getTwitterAccounts:^(BOOL accountsWereFound, NSArray *twitterAccounts) {

@@ -32,11 +32,11 @@
 {
     [super viewDidLoad];
     
-    [self.tableView setContentInset:UIEdgeInsetsMake(1,0,0,0)];
+    [self.tableView setContentInset:UIEdgeInsetsMake(2,0,0,0)];
     
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"butterfly_icon"]];
     
-    imageView.frame = CGRectMake(160 - imageView.frame.size.width / 4, 20, imageView.frame.size.width / 2, imageView.frame.size.height / 2);
+    imageView.frame = CGRectMake(160 - imageView.frame.size.width / 2, 20, imageView.frame.size.width, imageView.frame.size.height);
     [self.navigationController.view addSubview:imageView];
     
 //    Challenge *challenge = [Challenge object];
@@ -81,6 +81,12 @@
     storyCell.story = story;
     
     return storyCell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath object:(Story *)story
+{
+    UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath object:story];
+    return cell.frame.size.height;
 }
 
 @end

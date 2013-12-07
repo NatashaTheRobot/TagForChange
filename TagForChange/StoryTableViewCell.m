@@ -9,6 +9,15 @@
 #import "StoryTableViewCell.h"
 #import "SDWebImage/UIImageView+WebCache.h"
 
+@interface StoryTableViewCell()
+
+@property (weak, nonatomic) IBOutlet UIImageView *profileImage;
+@property (weak, nonatomic) IBOutlet UILabel *storyText;
+@property (weak, nonatomic) IBOutlet UILabel *numberOfParticipantsLable;
+
+
+@end
+
 @implementation StoryTableViewCell
 
 - (void)prepareForReuse
@@ -21,10 +30,11 @@
 {
     _story = story;
     [story.primaryUser fetchIfNeeded];
-    [self.imageView setImageWithURL:[NSURL URLWithString:story.primaryUser.image_url]
-                   placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
+    [self.profileImage setImageWithURL:[NSURL URLWithString:story.primaryUser.image_url]
+                   placeholderImage:[UIImage imageNamed:@"egg"]];
     
-    self.textLabel.text = [story text];
+    self.storyText.text = [story text];
+    self.numberOfParticipantsLable.text = [NSString stringWithFormat:@"%i", arc4random() % 99 + 1];
 }
 
 @end
