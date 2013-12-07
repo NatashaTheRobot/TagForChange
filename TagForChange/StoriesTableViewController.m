@@ -86,7 +86,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath object:(Story *)story
 {
     UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath object:story];
-    return cell.frame.size.height;
+    return cell.intrinsicContentSize.height;
 }
 
 @end
