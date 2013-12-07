@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "Challenge.h"
+#import "Sponsor.h"
+#import "Story.h"
+#import "Tag.h"
+#import "UsersChallenges.h"
 
 @implementation AppDelegate
 
@@ -16,6 +21,11 @@
                   clientKey:PARSE_CLIENT_KEY];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     [TFCUser registerSubclass];
+    [Challenge registerSubclass];
+    [Sponsor registerSubclass];
+    [Story registerSubclass];
+    [Tag registerSubclass];
+    [UsersChallenges registerSubclass];
     
     return YES;
 }

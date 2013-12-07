@@ -40,6 +40,11 @@
 		9C5A770D185350FF005573AA /* TWAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A770A185350FF005573AA /* TWAPIManager.m */; };
 		9C5A770E185350FF005573AA /* TWSignedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A770C185350FF005573AA /* TWSignedRequest.m */; };
 		9C5A7718185362A0005573AA /* TFCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A7717185362A0005573AA /* TFCUser.m */; };
+		9C5A771B18536ED7005573AA /* Challenge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A771A18536ED7005573AA /* Challenge.m */; };
+		9C5A771E18536F76005573AA /* Sponsor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A771D18536F76005573AA /* Sponsor.m */; };
+		9C5A772118536F84005573AA /* Story.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A772018536F84005573AA /* Story.m */; };
+		9C5A772418536F90005573AA /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A772318536F90005573AA /* Tag.m */; };
+		9C5A772718537446005573AA /* UsersChallenges.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5A772618537446005573AA /* UsersChallenges.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,16 @@
 		9C5A770C185350FF005573AA /* TWSignedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSignedRequest.m; sourceTree = "<group>"; };
 		9C5A7716185362A0005573AA /* TFCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFCUser.h; path = ../TFCUser.h; sourceTree = "<group>"; };
 		9C5A7717185362A0005573AA /* TFCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFCUser.m; path = ../TFCUser.m; sourceTree = "<group>"; };
+		9C5A771918536ED7005573AA /* Challenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Challenge.h; sourceTree = "<group>"; };
+		9C5A771A18536ED7005573AA /* Challenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Challenge.m; sourceTree = "<group>"; };
+		9C5A771C18536F76005573AA /* Sponsor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sponsor.h; sourceTree = "<group>"; };
+		9C5A771D18536F76005573AA /* Sponsor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sponsor.m; sourceTree = "<group>"; };
+		9C5A771F18536F84005573AA /* Story.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Story.h; sourceTree = "<group>"; };
+		9C5A772018536F84005573AA /* Story.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Story.m; sourceTree = "<group>"; };
+		9C5A772218536F90005573AA /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		9C5A772318536F90005573AA /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		9C5A772518537446005573AA /* UsersChallenges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersChallenges.h; sourceTree = "<group>"; };
+		9C5A772618537446005573AA /* UsersChallenges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersChallenges.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +288,16 @@
 			children = (
 				9C5A7716185362A0005573AA /* TFCUser.h */,
 				9C5A7717185362A0005573AA /* TFCUser.m */,
+				9C5A771918536ED7005573AA /* Challenge.h */,
+				9C5A771A18536ED7005573AA /* Challenge.m */,
+				9C5A771C18536F76005573AA /* Sponsor.h */,
+				9C5A771D18536F76005573AA /* Sponsor.m */,
+				9C5A771F18536F84005573AA /* Story.h */,
+				9C5A772018536F84005573AA /* Story.m */,
+				9C5A772218536F90005573AA /* Tag.h */,
+				9C5A772318536F90005573AA /* Tag.m */,
+				9C5A772518537446005573AA /* UsersChallenges.h */,
+				9C5A772618537446005573AA /* UsersChallenges.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -378,12 +403,17 @@
 				9C5A76FD185350B3005573AA /* PFTwitterUtils+NativeTwitter.m in Sources */,
 				9C5A7718185362A0005573AA /* TFCUser.m in Sources */,
 				9C5A770D185350FF005573AA /* TWAPIManager.m in Sources */,
+				9C5A772118536F84005573AA /* Story.m in Sources */,
+				9C5A772718537446005573AA /* UsersChallenges.m in Sources */,
 				9C5A7706185350EB005573AA /* OAuth+Additions.m in Sources */,
 				9C5A76B71853442D005573AA /* AppDelegate.m in Sources */,
 				9C5A7705185350EB005573AA /* NSData+Base64.m in Sources */,
 				9C5A7707185350EB005573AA /* OAuthCore.m in Sources */,
+				9C5A771E18536F76005573AA /* Sponsor.m in Sources */,
+				9C5A772418536F90005573AA /* Tag.m in Sources */,
 				9C5A76B31853442D005573AA /* main.m in Sources */,
 				9C5A76F518534ACA005573AA /* LoginViewController.m in Sources */,
+				9C5A771B18536ED7005573AA /* Challenge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
