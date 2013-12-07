@@ -22,21 +22,21 @@
 
 - (void)prepareForReuse
 {
-//    self.imageView.image = nil;
+    self.imageView.image = nil;
     self.textLabel.text = nil;
-}
-
-- (void)dealloc
-{
-    self.imageView.image = [UIImage imageNamed:@"egg"];
 }
 
 - (void)setStory:(Story *)story
 {
     _story = story;
     [story.primaryUser fetchIfNeeded];
+    [story.challenge fetchIfNeeded];
+    [story.secondaryUser fetchIfNeeded];
+    StoryTableViewCell *weakSelf = self;
     [self.profileImage setImageWithURL:[NSURL URLWithString:story.primaryUser.image_url] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
-
+        if (error) {
+            weakSelf.imageView.image = self.imageView.image = [UIImage imageNamed:@"egg"];
+        }
     }];
     
 //    [self.profileImage setImageWithURL:[NSURL URLWithString:story.primaryUser.image_url]

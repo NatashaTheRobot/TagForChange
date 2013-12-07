@@ -39,20 +39,22 @@
     imageView.frame = CGRectMake(160 - imageView.frame.size.width / 2, 20, imageView.frame.size.width, imageView.frame.size.height);
     [self.navigationController.view addSubview:imageView];
     
-//    Challenge *challenge = [Challenge object];
-//    challenge.title = @"Chime for Change";
-//    challenge.description = @"Teach something";
-//    challenge.initiator = [TFCUser currentUser];
-//    challenge.suggested = YES;
-//    [challenge save];
+//    PFQuery *query = [TFCUser query];
+//    NSArray *users = [query findObjects];
 //    
-//    // create story
+//    Challenge *challenge = [Challenge object];
+//    challenge.title = @"Check in with your people";
+//    challenge.description = @"Ask someone nearby “how are you?” mean it and listen.";
+//    challenge.initiator = users[arc4random() % users.count];
+//    [challenge saveInBackground];
+//    
 //    Story *story = [Story object];
-//    story.primaryUser = [TFCUser currentUser];
-//    story.likes = @5;
+//    story.primaryUser = users[arc4random() % users.count];
+//    story.secondaryUser = users[arc4random() % users.count];
+//    story.storyType = @(arc4random() % 4);
 //    story.challenge = challenge;
-//    [story save];
-
+//    [story saveInBackground];
+    
 }
 
 #pragma mark - Parse
