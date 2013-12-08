@@ -64,6 +64,7 @@
 		9CFFE97418539D3400E4A90A /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE96518539D3400E4A90A /* UIImage+WebP.m */; };
 		9CFFE97518539D3400E4A90A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE96718539D3400E4A90A /* UIImageView+WebCache.m */; };
 		9CFFE9781853AC8100E4A90A /* ColorfulNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE9771853AC8100E4A90A /* ColorfulNavigationController.m */; };
+		9CFFE97B1853EDA300E4A90A /* MyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFFE97A1853EDA300E4A90A /* MyAccountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +173,8 @@
 		9CFFE96718539D3400E4A90A /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		9CFFE9761853AC8100E4A90A /* ColorfulNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorfulNavigationController.h; sourceTree = "<group>"; };
 		9CFFE9771853AC8100E4A90A /* ColorfulNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorfulNavigationController.m; sourceTree = "<group>"; };
+		9CFFE9791853EDA300E4A90A /* MyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAccountViewController.h; sourceTree = "<group>"; };
+		9CFFE97A1853EDA300E4A90A /* MyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAccountViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +307,8 @@
 			children = (
 				9CFFE9381853845100E4A90A /* StoriesTableViewController.h */,
 				9CFFE9391853845100E4A90A /* StoriesTableViewController.m */,
+				9CFFE9791853EDA300E4A90A /* MyAccountViewController.h */,
+				9CFFE97A1853EDA300E4A90A /* MyAccountViewController.m */,
 				9CFFE93B1853846D00E4A90A /* TagsTableViewController.h */,
 				9CFFE93C1853846D00E4A90A /* TagsTableViewController.m */,
 				9C5A76F318534ACA005573AA /* LoginViewController.h */,
@@ -554,6 +559,7 @@
 				9C5A76F518534ACA005573AA /* LoginViewController.m in Sources */,
 				9CFFE97118539D3400E4A90A /* UIButton+WebCache.m in Sources */,
 				9C5A771B18536ED7005573AA /* Challenge.m in Sources */,
+				9CFFE97B1853EDA300E4A90A /* MyAccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
