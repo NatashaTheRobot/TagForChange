@@ -42,7 +42,7 @@
 //    [self.profileImage setImageWithURL:[NSURL URLWithString:story.primaryUser.image_url]
 //                   placeholderImage:[UIImage imageNamed:@"egg"]];
     
-    self.storyText.text = [story text];
+    self.storyText.attributedText = [story text];
     self.numberOfParticipantsLable.text = [NSString stringWithFormat:@"%i", arc4random() % 99 + 1];
 }
 

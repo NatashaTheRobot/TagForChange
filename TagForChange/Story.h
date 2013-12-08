@@ -23,8 +23,9 @@ typedef NS_ENUM(NSInteger, StoryType) {
 @property (strong, nonatomic) TFCUser *primaryUser;
 @property (strong, nonatomic) TFCUser *secondaryUser;
 @property (strong, nonatomic) NSNumber *likes;
+@property (assign, nonatomic) NSRange challengeStringRange;
 
 + (NSString *)parseClassName;
-- (NSString *)text;
+- (NSAttributedString *)text;
 
 @end

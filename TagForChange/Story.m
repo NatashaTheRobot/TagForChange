@@ -22,34 +22,7 @@
     return @"Story";
 }
 
-//{USER_A} = Me
-//{USER_B} = friend/someone else
-//
-//
-//Created a challenge (with title)
-//Text: {USER_B} created a challenge to {TITLE_OF_CHALLENGE}.
-//
-//Joined a challenge
-//Text: {USER_B} joined {TITLE_OF_CHALLENGE} challenge!
-//
-//USER_B Accepted a tag challenge
-//Text: {USER_B} accepted the {TITLE_OF_CHALLENGE} challenge!
-//
-//Took an action
-//Text: {USER_B} took an action for the {TITLE_OF_CHALLENGE} challenge
-//
-//Tagged someone else in a challenge
-//{USER_A} tagged {USER_B} in the {TITLE_OF_CHALLENGE} challenge!
-
-//typedef NS_ENUM(NSInteger, StoryType) {
-//    StoryTypeChallengeCreated,
-//    StoryTypeChallengeJoined,
-//    StoryTypeChallengeAccepted,
-//    StoryTypeChallengeCompleted,
-//    StoryTypeChallengeTagged
-//};
-
-- (NSString *)text
+- (NSAttributedString *)text
 {
     NSString *text;
     
@@ -77,7 +50,12 @@
         default:
             break;
     }
-    return text;
+    
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:text];
+    NSRange range = [text rangeOfString:self.challenge.title];
+    [str addAttribute:NSFontAttributeName value:[UIFont boldSystemFontOfSize:17.0] range:range];
+    
+    return str;
 }
 
 @end
